@@ -1,0 +1,29 @@
+:root {
+  /* Studio paper + ink — not champagne luxury */
+  --color-paper: #ebe4d8;
+  --color-paper-deep: #ddd3c3;
+  --color-ink: #171412;
+  --color-ink-mid: #3d342c;
+  --color-ink-faint: #8a7e72;
+  --color-pop: #c83e2f;
+  --color-pop-deep: #9e2c21;
+  --color-white: #f7f3ec;
+
+  --font-display: "Bricolage Grotesque", "Arial Narrow", sans-serif;
+  --font-body: "Petrona", Georgia, serif;
+
+  --text-brand: clamp(4.5rem, 16vw, 9.5rem);
+  --text-headline: clamp(1.85rem, 4.5vw, 3.1rem);
+  --text-lead: clamp(1.05rem, 1.8vw, 1.25rem);
+  --text-body: 1.125rem;
+  --text-ui: 0.95rem;
+
+  --gutter: clamp(1rem, 3.5vw, 2rem);
+  --section-y: clamp(3.5rem, 9vw, 6.5rem);
+  --content: 1120px;
+  --shell: 1200px;
+  --header-h: 3.5rem;
+
+  --ease: cubic-bezier(0.33, 1, 0.68, 1);
+  --fast: 160ms;
+}

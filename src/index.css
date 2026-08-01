@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Petrona:ital,wght@0,400;0,500;1,400;1,500&display=swap");
+@import "./styles/tokens.css";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  line-height: 1.55;
+  background-color: var(--color-paper);
+  background-image:
+    radial-gradient(circle at 18% 12%, color-mix(in srgb, var(--color-white) 70%, transparent) 0 28%, transparent 50%),
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.045'/%3E%3C/svg%3E");
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-pop);
+  outline-offset: 3px;
+}
+
+.skip-link {
+  position: absolute;
+  left: var(--gutter);
+  top: -100px;
+  z-index: 100;
+  padding: 0.6rem 0.9rem;
+  background: var(--color-ink);
+  color: var(--color-white);
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+}
+
+.skip-link:focus {
+  top: 0.75rem;
+}
+
+.site {
+  position: relative;
+  width: min(100%, var(--shell));
+  margin-inline: auto;
+  min-height: 100vh;
+  overflow-x: clip;
+  background-color: var(--color-paper);
+}
+
+@media (min-width: 1201px) {
+  .site {
+    border-inline: 3px solid var(--color-ink);
+  }
+}
+
+.link-arrow {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--text-ui);
+  text-decoration: none;
+  border-bottom: 2px solid currentColor;
+  padding-bottom: 0.1em;
+  transition: color var(--fast) var(--ease);
+}
+
+.link-arrow:hover {
+  color: var(--color-pop);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition-duration: 0.01ms !important;
+  }
+}
