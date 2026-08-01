@@ -36,13 +36,13 @@ Tokens live in `src/styles/tokens.css`.
 
 | Token | Hex | Role |
 | --- | --- | --- |
-| `--color-paper` | `#EBE4D8` | Page ground |
-| `--color-paper-deep` | `#DDD3C3` | Photo placeholders |
-| `--color-ink` | `#171412` | Type, rules, frames |
-| `--color-ink-mid` | `#3D342C` | Body |
-| `--color-ink-faint` | `#8A7E72` | Meta |
-| `--color-pop` | `#C83E2F` | Accent / focus / underline hits |
-| `--color-white` | `#F7F3EC` | Type on ink |
+| `--color-paper` | `#F6F0E6` | Page ground |
+| `--color-paper-deep` | `#E4D9C8` | Photo placeholders |
+| `--color-ink` | `#0C0908` | Type, rules, frames |
+| `--color-ink-mid` | `#2A211C` | Body |
+| `--color-ink-faint` | `#5C4F45` | Meta |
+| `--color-pop` | `#E03120` | Accent / focus / underline hits |
+| `--color-white` | `#FFFAF4` | Type on ink |
 
 Use hard borders (`3px solid ink`) instead of soft shadows. Texture via light grain, not mesh gradients.
 

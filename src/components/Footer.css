@@ -1,6 +1,6 @@
 .footer {
   background: var(--color-ink);
-  color: color-mix(in srgb, var(--color-white) 55%, transparent);
+  color: color-mix(in srgb, var(--color-white) 78%, transparent);
   padding: 0 0 1.75rem;
 }
 

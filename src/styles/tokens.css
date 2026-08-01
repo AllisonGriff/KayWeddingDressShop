@@ -1,13 +1,13 @@
 :root {
-  /* Studio paper + ink — not champagne luxury */
-  --color-paper: #ebe4d8;
-  --color-paper-deep: #ddd3c3;
-  --color-ink: #171412;
-  --color-ink-mid: #3d342c;
-  --color-ink-faint: #8a7e72;
-  --color-pop: #c83e2f;
-  --color-pop-deep: #9e2c21;
-  --color-white: #f7f3ec;
+  /* Higher-contrast studio paper + ink */
+  --color-paper: #f6f0e6;
+  --color-paper-deep: #e4d9c8;
+  --color-ink: #0c0908;
+  --color-ink-mid: #2a211c;
+  --color-ink-faint: #5c4f45;
+  --color-pop: #e03120;
+  --color-pop-deep: #b01f12;
+  --color-white: #fffaf4;
 
   --font-display: "Bricolage Grotesque", "Arial Narrow", sans-serif;
   --font-body: "Petrona", Georgia, serif;
