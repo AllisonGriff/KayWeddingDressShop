@@ -41,7 +41,8 @@
   mix-blend-mode: difference;
 }
 
-.header__nav a:hover {
+.header__nav a:hover,
+.header__nav a[aria-current="page"] {
   text-decoration: underline;
   text-underline-offset: 0.25em;
 }
@@ -54,6 +55,17 @@
   mix-blend-mode: difference;
   text-decoration: underline;
   text-underline-offset: 0.2em;
+}
+
+.header--on-paper .header__brand,
+.header--on-paper .header__nav a,
+.header--on-paper .header__menu {
+  color: var(--color-ink);
+  mix-blend-mode: normal;
+}
+
+.header--on-paper .header__menu.is-open {
+  color: var(--color-white);
 }
 
 .header__drawer {

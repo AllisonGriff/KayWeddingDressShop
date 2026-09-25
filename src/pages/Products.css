@@ -1,0 +1,121 @@
+.products {
+  padding-bottom: var(--section-y);
+}
+
+.products__filters,
+.products__grid {
+  width: min(100% - 2 * var(--gutter), var(--content));
+  margin-inline: auto;
+}
+
+.products__filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.products__filters button {
+  padding: 0.45rem 0.85rem;
+  border: 2px solid var(--color-ink);
+  font-family: var(--font-display);
+  font-size: var(--text-ui);
+  font-weight: 700;
+  transition:
+    background var(--fast) var(--ease),
+    color var(--fast) var(--ease);
+}
+
+.products__filters button:hover {
+  color: var(--color-pop);
+}
+
+.products__filters button.is-active {
+  background: var(--color-ink);
+  color: var(--color-white);
+}
+
+.products__grid {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 2.5rem 1.5rem;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+}
+
+.product__photo {
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  border: 3px solid var(--color-ink);
+  background: var(--color-paper-deep);
+}
+
+.product__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 400ms var(--ease);
+}
+
+.product:hover .product__photo img {
+  transform: scale(1.03);
+}
+
+.product__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  margin-top: 0.85rem;
+}
+
+.product__info h2 {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+.product__price {
+  flex-shrink: 0;
+  font-family: var(--font-display);
+  font-size: var(--text-ui);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.product__note {
+  margin-top: 0.3rem;
+  font-size: 1rem;
+  color: var(--color-ink-mid);
+}
+
+.product__ask {
+  align-self: flex-start;
+  margin-top: 0.6rem;
+  font-family: var(--font-display);
+  font-size: var(--text-ui);
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 2px solid var(--color-pop);
+}
+
+.product__ask:hover {
+  color: var(--color-pop);
+}
+
+@media (min-width: 620px) {
+  .products__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 980px) {
+  .products__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

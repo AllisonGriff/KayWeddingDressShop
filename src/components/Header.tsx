@@ -1,14 +1,16 @@
 import { useEffect, useState } from 'react'
+import { Link, useLocation } from 'react-router-dom'
 import './Header.css'
 
 const links = [
-  { href: '#collection', label: 'Looks' },
-  { href: '#about', label: 'About' },
-  { href: '#contact', label: 'Email' },
+  { to: '/looks', label: 'Looks' },
+  { to: '/products', label: 'Products' },
+  { to: '/about', label: 'About' },
 ]
 
 export function Header() {
   const [open, setOpen] = useState(false)
+  const { pathname } = useLocation()
 
   useEffect(() => {
     document.body.style.overflow = open ? 'hidden' : ''
@@ -18,17 +20,21 @@ export function Header() {
   }, [open])
 
   return (
-    <header className="header">
+    <header className={`header${pathname === '/' ? '' : ' header--on-paper'}`}>
       <div className="header__inner">
-        <a className="header__brand" href="#top" aria-label="Kay home">
+        <Link className="header__brand" to="/" aria-label="Kay home">
           kay
-        </a>
+        </Link>
 
         <nav className="header__nav" aria-label="Primary">
           {links.map((link) => (
-            <a key={link.href} href={link.href}>
+            <Link
+              key={link.to}
+              to={link.to}
+              aria-current={link.to === pathname ? 'page' : undefined}
+            >
               {link.label}
-            </a>
+            </Link>
           ))}
         </nav>
 
@@ -51,9 +57,9 @@ export function Header() {
       >
         <nav aria-label="Mobile">
           {links.map((link) => (
-            <a key={link.href} href={link.href} onClick={() => setOpen(false)}>
+            <Link key={link.to} to={link.to} onClick={() => setOpen(false)}>
               {link.label}
-            </a>
+            </Link>
           ))}
         </nav>
       </div>

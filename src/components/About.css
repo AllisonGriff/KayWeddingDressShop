@@ -1,6 +1,5 @@
 .about {
   padding: var(--section-y) 0;
-  border-top: 3px solid var(--color-ink);
 }
 
 .about__inner {

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { heroImage } from '../data/collection'
 import './Hero.css'
 
@@ -21,9 +22,9 @@ export function Hero() {
           Street pieces with spine — branching into wedding dresses without
           losing the attitude.
         </p>
-        <a className="link-arrow" href="#collection">
+        <Link className="link-arrow" to="/looks">
           see the dresses →
-        </a>
+        </Link>
       </div>
     </section>
   )
