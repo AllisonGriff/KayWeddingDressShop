@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import { SITE_NAME } from '../data/site'
 import './Header.css'
 
 const links = [
@@ -22,8 +23,8 @@ export function Header() {
   return (
     <header className={`header${pathname === '/' ? '' : ' header--on-paper'}`}>
       <div className="header__inner">
-        <Link className="header__brand" to="/" aria-label="Kay home">
-          kay
+        <Link className="header__brand" to="/" aria-label={`${SITE_NAME} home`}>
+          {SITE_NAME}
         </Link>
 
         <nav className="header__nav" aria-label="Primary">

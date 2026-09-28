@@ -1,7 +1,8 @@
 import { useEffect, type ReactNode } from 'react'
+import { SITE_NAME, SITE_TAGLINE } from '../data/site'
 import './PageHead.css'
 
-const DEFAULT_TITLE = 'Kay — clothes, and the white ones'
+const DEFAULT_TITLE = `${SITE_NAME} — ${SITE_TAGLINE}`
 
 type PageHeadProps = {
   title: string
@@ -10,7 +11,7 @@ type PageHeadProps = {
 
 export function PageHead({ title, children }: PageHeadProps) {
   useEffect(() => {
-    document.title = `${title} — Kay`
+    document.title = `${title} — ${SITE_NAME}`
     return () => {
       document.title = DEFAULT_TITLE
     }

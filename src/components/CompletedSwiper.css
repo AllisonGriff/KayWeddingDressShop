@@ -1,0 +1,115 @@
+.swiper {
+  padding: var(--section-y) 0;
+}
+
+.swiper__head {
+  width: min(100% - 2 * var(--gutter), var(--content));
+  margin: 0 auto 1.5rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.swiper__head h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.9rem, 5vw, 3rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+
+.swiper__head p {
+  margin-top: 0.5rem;
+  font-style: italic;
+  color: var(--color-ink-mid);
+}
+
+.swiper__controls {
+  display: none;
+  gap: 1.25rem;
+  font-family: var(--font-display);
+  font-size: var(--text-ui);
+  font-weight: 700;
+}
+
+.swiper__controls button {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.swiper__controls button:hover:not(:disabled) {
+  color: var(--color-pop);
+}
+
+.swiper__controls button:disabled {
+  color: var(--color-ink-faint);
+  text-decoration: none;
+  cursor: default;
+}
+
+.swiper__track {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+  padding: 0 var(--gutter) 0.75rem;
+  scroll-padding-inline: var(--gutter);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  overscroll-behavior-x: contain;
+  scrollbar-width: none;
+}
+
+.swiper__track::-webkit-scrollbar {
+  display: none;
+}
+
+.swiper__item {
+  flex: 0 0 min(78vw, 20rem);
+  scroll-snap-align: start;
+}
+
+.swiper__item figure {
+  margin: 0;
+}
+
+.swiper__item img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border: 3px solid var(--color-ink);
+  background: var(--color-paper-deep);
+}
+
+.swiper__item figcaption {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.6rem;
+}
+
+.swiper__item strong {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.swiper__item span {
+  font-size: 0.95rem;
+  color: var(--color-ink-mid);
+}
+
+@media (min-width: 760px) {
+  .swiper__controls {
+    display: flex;
+  }
+
+  .swiper__track {
+    gap: 1.5rem;
+  }
+
+  .swiper__item {
+    flex-basis: 22rem;
+  }
+}

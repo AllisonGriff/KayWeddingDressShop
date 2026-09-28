@@ -1,4 +1,5 @@
 import { useState, type FormEvent } from 'react'
+import { SITE_NAME } from '../data/site'
 import './Contact.css'
 
 type Status = 'idle' | 'sending' | 'sent' | 'error'
@@ -33,7 +34,7 @@ export function Contact() {
             email,
             date: date || 'Not specified',
             message,
-            _subject: `Kay inquiry from ${name}`,
+            _subject: `${SITE_NAME} inquiry from ${name}`,
             _template: 'table',
           }),
         },

@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { heroImage } from '../data/collection'
+import { SITE_NAME } from '../data/site'
 import './Hero.css'
 
 export function Hero() {
@@ -16,7 +17,7 @@ export function Hero() {
       </div>
 
       <div className="hero__slab">
-        <p className="hero__brand">Kay</p>
+        <p className="hero__brand">{SITE_NAME}</p>
         <h1 className="hero__headline">I make clothes. Now I’m making the white ones.</h1>
         <p className="hero__lead">
           Street pieces with spine — branching into wedding dresses without

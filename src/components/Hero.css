@@ -31,14 +31,15 @@
 
 .hero__brand {
   font-family: var(--font-display);
-  font-size: clamp(4rem, 14vw, 8rem);
+  font-size: clamp(2.75rem, 9vw, 6.5rem);
   font-weight: 800;
-  line-height: 0.78;
-  letter-spacing: -0.07em;
+  line-height: 0.85;
+  letter-spacing: -0.06em;
   color: var(--color-ink);
   margin-top: -0.42em;
   margin-bottom: 0.2rem;
-  width: max-content;
+  width: fit-content;
+  max-width: 100%;
   padding: 0.08em 0.12em 0;
   background: var(--color-paper);
 }
