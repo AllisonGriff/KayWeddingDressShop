@@ -17,21 +17,24 @@
 
 .products__filters button {
   padding: 0.45rem 0.85rem;
-  border: 2px solid var(--color-ink);
-  font-family: var(--font-display);
+  border: 1px solid #c9bfb3;
+  font-family: var(--font-body);
   font-size: var(--text-ui);
-  font-weight: 700;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   transition:
     background var(--fast) var(--ease),
     color var(--fast) var(--ease);
 }
 
 .products__filters button:hover {
-  color: var(--color-pop);
+  color: var(--color-pop-deep);
 }
 
 .products__filters button.is-active {
   background: var(--color-ink);
+  border-color: var(--color-ink);
   color: var(--color-white);
 }
 
@@ -50,7 +53,7 @@
 .product__photo {
   aspect-ratio: 4 / 5;
   overflow: hidden;
-  border: 3px solid var(--color-ink);
+  border: 1px solid #e1d9cf;
   background: var(--color-paper-deep);
 }
 
@@ -75,37 +78,39 @@
 
 .product__info h2 {
   font-family: var(--font-display);
-  font-size: 1.35rem;
-  font-weight: 800;
-  letter-spacing: -0.03em;
+  font-size: 1.7rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
 }
 
 .product__price {
   flex-shrink: 0;
-  font-family: var(--font-display);
+  font-family: var(--font-body);
   font-size: var(--text-ui);
-  font-weight: 700;
+  font-weight: 500;
   font-variant-numeric: tabular-nums;
 }
 
 .product__note {
   margin-top: 0.3rem;
-  font-size: 1rem;
+  font-size: 0.92rem;
   color: var(--color-ink-mid);
 }
 
 .product__ask {
   align-self: flex-start;
   margin-top: 0.6rem;
-  font-family: var(--font-display);
+  font-family: var(--font-body);
   font-size: var(--text-ui);
-  font-weight: 700;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   text-decoration: none;
-  border-bottom: 2px solid var(--color-pop);
+  border-bottom: 1px solid var(--color-pop);
 }
 
 .product__ask:hover {
-  color: var(--color-pop);
+  color: var(--color-pop-deep);
 }
 
 @media (min-width: 620px) {

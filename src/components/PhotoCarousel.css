@@ -9,16 +9,16 @@
 
 .looks__head h2 {
   font-family: var(--font-display);
-  font-size: clamp(1.7rem, 4vw, 2.4rem);
-  font-weight: 800;
-  letter-spacing: -0.03em;
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  font-weight: 400;
+  letter-spacing: -0.01em;
   line-height: 1.1;
 }
 
 .looks__head p {
   margin-top: 0.6rem;
   color: var(--color-ink-mid);
-  font-style: italic;
+
 }
 
 .looks__deck {
@@ -30,7 +30,6 @@
   width: 100%;
   aspect-ratio: 5 / 6;
   background: var(--color-paper-deep);
-  border-block: 3px solid var(--color-ink);
   overflow: hidden;
 }
 
@@ -39,7 +38,7 @@
     aspect-ratio: 16 / 9;
     width: min(100% - 2 * var(--gutter), var(--content));
     margin-inline: auto;
-    border: 3px solid var(--color-ink);
+    border: 1px solid #d8d0c6;
   }
 }
 
@@ -80,9 +79,11 @@
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  font-family: var(--font-display);
-  font-weight: 700;
+  font-family: var(--font-body);
+  font-weight: 600;
   font-size: var(--text-ui);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 
 .looks__controls button {
@@ -91,7 +92,7 @@
 }
 
 .looks__controls button:hover {
-  color: var(--color-pop);
+  color: var(--color-pop-deep);
 }
 
 .looks__controls span {

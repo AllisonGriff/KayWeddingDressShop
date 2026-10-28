@@ -13,33 +13,33 @@
 
 .swiper__head h2 {
   font-family: var(--font-display);
-  font-size: clamp(1.9rem, 5vw, 3rem);
-  font-weight: 800;
-  letter-spacing: -0.04em;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 400;
+  letter-spacing: -0.02em;
   line-height: 1;
 }
 
 .swiper__head p {
   margin-top: 0.5rem;
-  font-style: italic;
   color: var(--color-ink-mid);
 }
 
 .swiper__controls {
   display: none;
   gap: 1.25rem;
-  font-family: var(--font-display);
+  font-family: var(--font-body);
   font-size: var(--text-ui);
-  font-weight: 700;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 
 .swiper__controls button {
-  text-decoration: underline;
-  text-underline-offset: 0.2em;
+  border-bottom: 1px solid var(--color-pop);
 }
 
 .swiper__controls button:hover:not(:disabled) {
-  color: var(--color-pop);
+  color: var(--color-pop-deep);
 }
 
 .swiper__controls button:disabled {
@@ -78,7 +78,6 @@
   width: 100%;
   aspect-ratio: 4 / 5;
   object-fit: cover;
-  border: 3px solid var(--color-ink);
   background: var(--color-paper-deep);
 }
 
@@ -90,9 +89,9 @@
 
 .swiper__item strong {
   font-family: var(--font-display);
-  font-size: 1.15rem;
-  font-weight: 800;
-  letter-spacing: -0.02em;
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 0;
 }
 
 .swiper__item span {

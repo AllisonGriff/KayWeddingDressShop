@@ -1,28 +1,27 @@
 :root {
-  /* Higher-contrast studio paper + ink */
-  --color-paper: #f6f0e6;
-  --color-paper-deep: #e4d9c8;
-  --color-ink: #0c0908;
-  --color-ink-mid: #2a211c;
-  --color-ink-faint: #5c4f45;
-  --color-pop: #e03120;
-  --color-pop-deep: #b01f12;
-  --color-white: #fffaf4;
+  --color-paper: #faf8f4;
+  --color-paper-deep: #e9e3da;
+  --color-ink: #302b27;
+  --color-ink-mid: #5b544d;
+  --color-ink-faint: #82786e;
+  --color-pop: #9a7a57;
+  --color-pop-deep: #795e42;
+  --color-white: #fffdf9;
 
-  --font-display: "Bricolage Grotesque", "Arial Narrow", sans-serif;
-  --font-body: "Petrona", Georgia, serif;
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-body: "DM Sans", Arial, sans-serif;
 
   --text-brand: clamp(4.5rem, 16vw, 9.5rem);
-  --text-headline: clamp(1.85rem, 4.5vw, 3.1rem);
+  --text-headline: clamp(2.2rem, 5vw, 4rem);
   --text-lead: clamp(1.05rem, 1.8vw, 1.25rem);
-  --text-body: 1.125rem;
-  --text-ui: 0.95rem;
+  --text-body: 1rem;
+  --text-ui: 0.82rem;
 
-  --gutter: clamp(1rem, 3.5vw, 2rem);
-  --section-y: clamp(3.5rem, 9vw, 6.5rem);
-  --content: 1120px;
-  --shell: 1200px;
-  --header-h: 3.5rem;
+  --gutter: clamp(1.25rem, 5vw, 4rem);
+  --section-y: clamp(4.5rem, 10vw, 8rem);
+  --content: 1180px;
+  --shell: 1440px;
+  --header-h: 5rem;
 
   --ease: cubic-bezier(0.33, 1, 0.68, 1);
   --fast: 160ms;

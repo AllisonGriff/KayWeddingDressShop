@@ -19,9 +19,9 @@
 
 .header__brand {
   font-family: var(--font-display);
-  font-size: 1.35rem;
-  font-weight: 800;
-  letter-spacing: -0.04em;
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--color-white);
   mix-blend-mode: difference;
@@ -29,13 +29,15 @@
 
 .header__nav {
   display: none;
-  gap: 1.4rem;
+  gap: clamp(1.5rem, 3vw, 2.75rem);
 }
 
 .header__nav a {
-  font-family: var(--font-display);
-  font-size: 0.95rem;
+  font-family: var(--font-body);
+  font-size: 0.75rem;
   font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
   text-decoration: none;
   color: var(--color-white);
   mix-blend-mode: difference;
@@ -43,14 +45,15 @@
 
 .header__nav a:hover,
 .header__nav a[aria-current="page"] {
-  text-decoration: underline;
-  text-underline-offset: 0.25em;
+  color: var(--color-pop);
 }
 
 .header__menu {
-  font-family: var(--font-display);
-  font-size: 0.95rem;
-  font-weight: 700;
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
   color: var(--color-white);
   mix-blend-mode: difference;
   text-decoration: underline;
@@ -64,8 +67,9 @@
   mix-blend-mode: normal;
 }
 
-.header--on-paper .header__menu.is-open {
-  color: var(--color-white);
+.header__menu.is-open {
+  color: var(--color-ink);
+  mix-blend-mode: normal;
 }
 
 .header__drawer {
@@ -74,8 +78,8 @@
   z-index: 30;
   display: grid;
   place-items: center;
-  background: var(--color-ink);
-  color: var(--color-white);
+  background: var(--color-paper);
+  color: var(--color-ink);
   opacity: 0;
   pointer-events: none;
   transition: opacity var(--fast) var(--ease);
@@ -107,9 +111,9 @@
 
 .header__drawer a {
   font-family: var(--font-display);
-  font-size: clamp(2rem, 10vw, 3rem);
-  font-weight: 800;
-  letter-spacing: -0.03em;
+  font-size: clamp(2.5rem, 10vw, 4rem);
+  font-weight: 400;
+  letter-spacing: 0.01em;
   text-decoration: none;
 }
 

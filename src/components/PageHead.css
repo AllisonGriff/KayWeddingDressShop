@@ -1,22 +1,21 @@
 .page-head {
   width: min(100% - 2 * var(--gutter), var(--content));
   margin-inline: auto;
-  padding: calc(var(--header-h) + clamp(2rem, 6vw, 4rem)) 0 1.5rem;
-  border-bottom: 3px solid var(--color-ink);
+  padding: calc(var(--header-h) + clamp(2.5rem, 7vw, 5rem)) 0 2rem;
+  border-bottom: 1px solid #d8d0c6;
 }
 
 .page-head h1 {
   font-family: var(--font-display);
-  font-size: clamp(3.25rem, 11vw, 6.5rem);
-  font-weight: 800;
-  line-height: 0.85;
-  letter-spacing: -0.06em;
+  font-size: clamp(3.5rem, 11vw, 7rem);
+  font-weight: 400;
+  line-height: 0.95;
+  letter-spacing: -0.03em;
 }
 
 .page-head p {
-  margin-top: 1rem;
+  margin-top: 1.25rem;
   max-width: 38ch;
-  font-style: italic;
   color: var(--color-ink-mid);
 }
 
