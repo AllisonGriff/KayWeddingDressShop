@@ -9,7 +9,17 @@ export function Playground() {
       </PageHead>
 
       <section className="playground" aria-label="Design playground">
-        <p>New ideas start here.</p>
+        <p className="playground__intro">New ideas start here.</p>
+        <article className="playground__color-study">
+          <div className="playground__swatch" aria-hidden="true" />
+          <div>
+            <p className="playground__eyebrow">Accent color</p>
+            <h2>Soft lavender</h2>
+            <p className="playground__description">
+              A gentle floral note alongside warm paper and bronze.
+            </p>
+          </div>
+        </article>
       </section>
     </>
   )

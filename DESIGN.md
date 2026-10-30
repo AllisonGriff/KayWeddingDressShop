@@ -7,7 +7,7 @@ Visual system for Kay: a young designer moving into wedding dresses. The site sh
 | Pillar | Meaning |
 | --- | --- |
 | **Warm** | Ivory, soft stone, and natural light |
-| **Refined** | Generous whitespace, delicate rules, restrained bronze accents |
+| **Refined** | Generous whitespace, delicate rules, restrained bronze and lavender accents |
 | **Personal** | Plainspoken copy and honest photographs, never a generic luxury template |
 
 ## What to avoid
@@ -30,9 +30,12 @@ Tokens live in `src/styles/tokens.css`.
 | `--color-ink-mid` | `#5B544D` | Body |
 | `--color-ink-faint` | `#82786E` | Secondary text |
 | `--color-pop` | `#9A7A57` | Restrained bronze accent |
+| `--color-lavender` | `#B7A5C9` | Soft floral accent |
+| `--color-lavender-deep` | `#746080` | Lavender text and detail |
+| `--color-lavender-wash` | `#F1ECF4` | Light lavender surface |
 | `--color-white` | `#FFFDF9` | Light type |
 
-Use fine, low-contrast rules and clean image edges. Let whitespace and photography create the visual rhythm.
+Use lavender as a quiet secondary accent with the warm neutrals and bronze. Use fine, low-contrast rules and clean image edges; let whitespace and photography create the visual rhythm.
 
 ## Typography
 
@@ -58,4 +61,4 @@ Keep motion quiet. Crossfade slides and use subtle hover feedback. Honor `prefer
 
 ## Scaling
 
-Structure stays section-based for now. Future pages/shop should use the same warm neutrals, editorial typography, restrained accent, and generous spacing.
+Structure stays section-based for now. Future pages/shop should use the same warm neutrals, editorial typography, restrained bronze and lavender accents, and generous spacing.

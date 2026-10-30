@@ -1,14 +1,63 @@
 .playground {
-  display: grid;
-  min-height: clamp(18rem, 45vw, 34rem);
-  place-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(2rem, 5vw, 3.5rem);
   padding: var(--section-y) var(--gutter);
   text-align: center;
 }
 
-.playground p {
+.playground__intro {
   color: var(--color-ink-faint);
   font-family: var(--font-display);
   font-size: clamp(1.75rem, 4vw, 2.75rem);
   font-style: italic;
+}
+
+.playground__color-study {
+  display: grid;
+  grid-template-columns: minmax(7rem, 0.7fr) 1fr;
+  align-items: center;
+  gap: clamp(1.25rem, 4vw, 2.5rem);
+  width: min(100%, 38rem);
+  padding: clamp(1.25rem, 4vw, 2rem);
+  background: var(--color-lavender-wash);
+  text-align: left;
+}
+
+.playground__swatch {
+  min-height: 9rem;
+  background: var(--color-lavender);
+}
+
+.playground__eyebrow {
+  color: var(--color-lavender-deep);
+  font-size: var(--text-ui);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.playground__color-study h2 {
+  margin-top: 0.3rem;
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.playground__description {
+  margin-top: 0.65rem;
+  color: var(--color-ink-mid);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 480px) {
+  .playground__color-study {
+    grid-template-columns: 1fr;
+  }
+
+  .playground__swatch {
+    min-height: 7rem;
+  }
 }
