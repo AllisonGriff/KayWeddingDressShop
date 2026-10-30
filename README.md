@@ -1,6 +1,6 @@
 # Kay Website
 
-Single-page site for Kay — a young clothing designer branching into wedding dresses.
+Website for Kay — a young clothing designer branching into wedding dresses.
 
 ## Design
 
@@ -27,9 +27,10 @@ npm run preview
 
 ```
 src/
-  components/   # Page sections (Header, Hero, PhotoCarousel, About, Contact, Footer)
-  data/         # Content & imagery data (ready to grow into a shop later)
-  styles/       # Design tokens
+  components/  # Page sections (Header, Hero, PhotoCarousel, About, Contact, Footer)
+  data/        # Content & imagery data (ready to grow into a shop later)
+  pages/       # Route-level pages
+  styles/      # Design tokens
 ```
 
-Routes and shop are intentionally not added yet — the layout and tokens are ready to scale.
+The design playground is available at `/playground` as a starting point for future visual experiments.

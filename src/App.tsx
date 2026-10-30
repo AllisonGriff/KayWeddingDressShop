@@ -6,6 +6,7 @@ import { Header } from './components/Header'
 import { AboutPage } from './pages/AboutPage'
 import { Home } from './pages/Home'
 import { Looks } from './pages/Looks'
+import { Playground } from './pages/Playground'
 import { Products } from './pages/Products'
 
 function ScrollManager() {
@@ -36,6 +37,7 @@ function App() {
           <Route path="/looks" element={<Looks />} />
           <Route path="/products" element={<Products />} />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/playground" element={<Playground />} />
           <Route path="*" element={<Home />} />
         </Routes>
         <Contact />
